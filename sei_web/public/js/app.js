@@ -4950,6 +4950,11 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__.default;
 alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start();
+var buttonNav = document.querySelector('.nav-button');
+var contentNav = document.querySelector('.nav-open');
+buttonNav.addEventListener("click", function () {
+  contentNav.classList.toggle('show');
+});
 
 /***/ }),
 

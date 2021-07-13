@@ -1,3 +1,169 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face{
+	font-family: Gotham-Bold;
+	src: "font/Gotham-Font/Gotham-Bold.otf";
+}
+
+@font-face{
+	font-family: GothamBook;
+	src: "font/Gotham-Font/GothamBlook.ttf";
+}
+
+.gotham-book{
+	font-family: "GothamBook";
+}
+
+.gotham-bold{
+	font-family: "Gotham-Bold";
+}
+
+
+.nav-bg-color{
+	background-color: #0F103A;
+}
+
+.nav-text{
+ 	font-family: "Gotham-Black";
+	color: white;
+}
+
+.nav-icon{
+	width: 2rem;
+}
+
+.hamburger{
+	width: 35px;
+	height: 5px;
+	margin: 2px 0;
+}
+
+.show{
+	display: block;
+}
+
+@media (min-width: 728px){
+	.nav-wrapper{
+		transform:skew(-30deg);
+	}
+
+	.nav-sei{
+		transform:skew(30deg);
+	}
+
+	.nav-ps{
+		top: 50px;
+	}
+
+	.lang-ps{
+		top: 40px;
+	}
+
+	.quote-ps{
+		bottom: 100px;
+	}
+}
+
+.logo-wrapper{
+	width: 233px;
+	height: 75px;
+}
+
+.sei-top-border{
+	border: solid 3px;
+	border-color: #00A763;
+	background-color:  #00A763;
+	width: 70px;
+	margin-bottom: 15px;
+}
+
+.footer-list{
+	list-style-image: url("/img/li.png");
+}
+
+.bg-grow{
+	background-image: url("/img/growing.png");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+
+}
+
+.grow-img{
+	height: 107px;
+	width: 107px;
+}
+
+.sei-green{
+	color: #00A762;
+}
+
+.sei-bg-green{
+	background-color:  #00A762;
+}
+
+.map-wrapper{
+	max-width: 800px; 
+	max-height: 600px;
+}
+
+.bg-benefit{
+	background-image: url("/img/benefit-bg.png");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+
+.sei-color{
+	color: #404041;
+}
+
+.dot-border-bottom{
+	border-bottom: 3px dotted;
+	border-color: #404041;
+}
+
+.benefit-img{
+	height: 180px;
+	width: 180px !important;
+}
+
+.slider-content{
+	max-width: 100%;
+}
+
+.slider-left{
+	background-image: url("/img/left.png");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 2.5rem;
+  	width: 2.5rem;
+  	top: 50%;
+    left: 2%;
+    transform: translate(0%,-50%);
+}
+
+.slider-right{
+	background-image: url("/img/right.png");
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	height: 2.5rem;
+  	width: 2.5rem;
+  	top: 50%;
+    right: 1%;
+    transform: translate(-50%,0%);
+}
+
+.content{
+	top: 30%;
+	left: 10%;
+	max-width: 700px;
+}
