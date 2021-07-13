@@ -4949,12 +4949,40 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__.default;
-alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start();
+alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start(); //mobile navbar
+
 var buttonNav = document.querySelector('.nav-button');
 var contentNav = document.querySelector('.nav-open');
 buttonNav.addEventListener("click", function () {
   contentNav.classList.toggle('show');
-});
+}); //slider
+
+var sliderIndex = 1;
+
+window.showDivs = function (n) {
+  var i;
+  var x = document.getElementsByClassName("slider");
+
+  if (n > x.length) {
+    sliderIndex = 1;
+  }
+
+  if (n < 1) {
+    sliderIndex = x.length;
+  }
+
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  x[sliderIndex - 1].style.display = "block";
+};
+
+showDivs(sliderIndex);
+
+window.plusDivs = function (n) {
+  showDivs(sliderIndex += n);
+};
 
 /***/ }),
 

@@ -112,12 +112,16 @@ html {
 	max-width: 800px; 
 	max-height: 600px;
 }
-
+.bg-jaring{
+	background-image: url("/img/jaring2.png");
+	background-repeat: repeat-x;
+	background-size: cover;
+}
 .bg-benefit{
 	background-image: url("/img/benefit-bg.png");
 	background-size: cover;
 	background-position: center;
-  	background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .sei-color{
@@ -133,6 +137,7 @@ html {
 	height: 180px;
 	width: 180px !important;
 }
+
 
 .slider-content{
 	max-width: 100%;
@@ -150,6 +155,10 @@ html {
     transform: translate(0%,-50%);
 }
 
+.slider-left:hover{
+	transform: scale(1.5);
+}
+
 .slider-right{
 	background-image: url("/img/right.png");
 	background-size: cover;
@@ -162,8 +171,41 @@ html {
     transform: translate(-50%,0%);
 }
 
+.slider-right:hover{
+	transform: scale(1.5);
+}
+
 .content{
 	top: 30%;
 	left: 10%;
 	max-width: 700px;
 }
+
+.button-active{
+	background-color: white;
+	color:  #00A762;
+	padding: 5px;
+	transform:skew(30deg);
+}
+
+.text-active{
+	transform:skew(-30deg);
+}
+
+.pt-15{
+	padding-top: 15px;
+}
+
+.swiper-container {
+  width: 1200px;
+  height: 250px;
+}
+
+.sei-project-shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.b-100px{
+	bottom: 100px;
+}
+

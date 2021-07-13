@@ -13,8 +13,19 @@
 			<button class="text-white sei-bg-green p-2 rounded-xl nav-sei my-8 w-3/4"><p class="nav-wrapper gotham-bold text-2xl pt-3">SEE PROJECT REFERENCES</p></button>
 		</div>
 	</div>
-	<button class="slider-left absolute"></button>
-	<button class="slider-right absolute"></button>
+
+	<div class="slider relative">
+		<img class="w-full" src="{{url('img/slider1.png')}}">
+		<div class="bg-blue-600 bg-opacity-40 p-10 flex flex-col absolute content hidden md:block">
+			<div class="sei-top-border"></div>
+			<h1 class="gotham-bold text-white md:text-3xl pt-5 text-md">SOLUSI TEPAT GUNA UNTUK KEBUTUHAN EFISIENSI ENERGI ANDA</h1>
+			<p class="text-white gotham-book">Kami, PT Solusi Energindo Inovasi (PT SEI) adalah perusahaan penyedia jasa Konservasi dan Efisiensi Energi menggunakan Solar PV.</p>
+			<button class="text-white sei-bg-green p-2 rounded-xl nav-sei my-8 w-3/4"><p class="nav-wrapper gotham-bold text-2xl pt-3">SEE PROJECT REFERENCES</p></button>
+		</div>
+	</div>
+
+	<button class="slider-left absolute" onclick="plusDivs(-1)"></button>
+	<button class="slider-right absolute" onclick="plusDivs(+1)"></button>
 </div>
 
 <!-- benefit -->
@@ -22,7 +33,7 @@
 	<div class="p-3 flex relative justify-center z-10 quote-ps">
 		<div class="flex md:flex-row sei-bg-green items-center w-3/4 p-3 nav-sei rounded-xl justify-center">
 			<p class="text-white gotham-bold md:block hidden nav-wrapper">CARI TAHU BERAPA BESAR EFISIENSI ENERGI YANG BISA ANDA LAKUKAN DENGAN SOLAR PANEL</p>
-			<button class="bg-white p-2 md:ml-6 rounded-xl"><p class="nav-wrapper text-sm gotham-bold p-2">GET QUOTE</p></button>
+			<button class="bg-white p-2 md:ml-6 rounded-xl"><p class="nav-wrapper text-sm gotham-bold p-2 pt-5">GET QUOTE</p></button>
 		</div>
 	</div>
 	<div class="md:mx-20  flex flex-col items-center">
@@ -97,6 +108,62 @@
 			</div>
 		</div>
 	</div> 
+</div>
+
+<!--feature project -->
+
+<div class="p-5 bg-jaring sei-project-shadow z-10">
+	<div class="flex md:flex-row md:justify-between flex-col z-20 md:mx-20 items-center">
+		<h1 class="gotham-bold text-white text-3xl pt-5">Featured Projects</h1>
+		<div class="flex md:flex-row flex-col">
+			<button class="text-white gotham-bold mx-5 pt-15 rounded-md button-active"><p class="text-active px-3">ALL PROJECT</p></button>
+			<button class="text-white gotham-bold mx-5 pt-15 rounded-md "><p class="px-3">RESIDENTIAL</p></button>
+			<button class="text-white gotham-bold mx-5 pt-15 rounded-md "><p class="px-3">COMMERCIAL</p></button>
+			<button class="text-white gotham-bold mx-5 pt-15 rounded-md "><p class="px-3">OFFICES</p></button>
+		</div>
+	</div>
+</div>
+<div style="height: 5px"></div>
+<div class="p-5 bg-jaring">
+	<!-- Slider main container -->
+	<div class="swiper-container">
+	  <!-- Additional required wrapper -->
+	  <div class="swiper-wrapper">
+	    <!-- Slides -->
+	    <div class="swiper-slide">
+	    	<img src="{{url('img/p1.png')}}" class="shadow-2xl">
+	    	<div class="flex flex-col relative z-10 p-4 b-100px">
+	    		<p class="text-white text-sm gotham-bold">RESIDENTIAL</p>
+	    		<p class="text-white gotham-bold">JANE DOE HOUSE, ANCOL</p>
+	    		<button class="sei-bg-green w-2/4 nav-sei rounded-md"><p class="text-white gotham-bold text-sm pt-2 nav-wrapper">VIEW MORE</p></button>
+	    	</div>
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="{{url('img/p2.png')}}" class="shadow-2xl">
+	    	<div class="flex flex-col relative z-10 p-4 b-100px">
+	    		<p class="text-white text-sm gotham-bold">RESIDENTIAL</p>
+	    		<p class="text-white gotham-bold">FORESTA VILLAGE, BSD</p>
+	    		<button class="sei-bg-green w-2/4 nav-sei rounded-md"><p class="text-white gotham-bold text-sm pt-2 nav-wrapper">VIEW MORE</p></button>
+	    	</div>
+	    </div>
+	    <div class="swiper-slide">
+	    	<img src="{{url('img/p3.png')}}" class="shadow-2xl">
+	    	<div class="flex flex-col relative z-10 p-4 b-100px">
+	    		<p class="text-white text-sm gotham-bold">RESIDENTIAL</p>
+	    		<p class="text-white gotham-bold">CORELLA GARDEN, SERPONG</p>
+	    		<button class="sei-bg-green w-2/4 nav-sei rounded-md"><p class="text-white gotham-bold text-sm pt-2 nav-wrapper">VIEW MORE</p></button>
+	    	</div>
+	 	</div>
+	 </div>
+
+	  <!-- If we need navigation buttons -->
+	</div>
+
+	<div class="relative z-30" style="top:-150px">
+		<div class="swiper-button-prev" style="top:auto; color: white; left: 50px;"></div>
+		<div class="swiper-button-next" style="top:auto; color: white; right: 50px;"></div>
+	</div>
+	
 </div>
 
 <!-- grow -->
